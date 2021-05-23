@@ -32,7 +32,7 @@ INA2xxValue::INA2xxValue(INA2xx* ina2xx, uint8_t deviceNum,
                          String config_path)
     : NumericSensor(config_path),
       ina2xx_{ina2xx},
-      deviceNum_{deviceNum_},
+      deviceNum_{deviceNum},
       val_type_{val_type},
       read_delay_{read_delay} {
   load_configuration();
